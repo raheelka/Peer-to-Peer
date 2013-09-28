@@ -1,0 +1,27 @@
+ Extended ICMP to Support Multi-Part Messages
+
+Status of This Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the "Internet
+   Official Protocol Standards" (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The IETF Trust (2007).
+
+Abstract
+
+   This document redefines selected ICMP messages to support multi-part
+   operation.  A multi-part ICMP message carries all of the information
+   that ICMP messages carried previously, as well as additional
+   information that applications may require.
+
+   Multi-part messages are supported by an ICMP extension structure.
+   The extension structure is situated at the end of the ICMP message.
+   It includes an extension header followed by one or more extension
+   objects.  Each extension object contains an object header and object
+   payload.  All object headers share a common format.
+
